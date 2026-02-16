@@ -1,0 +1,255 @@
+/* ============================= */
+/* RESET GENERAL */
+/* ============================= */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(180deg,#06142b,#020814);
+  color:white;
+  min-height:100vh;
+}
+
+
+/* ============================= */
+/* HEADER PANEL ADMIN */
+/* ============================= */
+.header-admin{
+  background: linear-gradient(180deg,#0b1c3d,#08142b);
+  padding:20px;
+  text-align:center;
+  border-bottom:1px solid rgba(255,255,255,0.08);
+}
+
+.titulo-admin{
+  font-size:20px;
+  letter-spacing:2px;
+  margin-bottom:5px;
+}
+
+.subtitulo-admin{
+  font-size:13px;
+  opacity:0.7;
+}
+
+
+/* ============================= */
+/* CONTENEDOR PRINCIPAL */
+/* ============================= */
+.admin-container{
+  width:95%;
+  max-width:1100px;
+  margin:25px auto;
+  padding:10px;
+  overflow-x:auto; /* scroll horizontal en móvil */
+}
+
+
+/* ============================= */
+/* TABLA ADMIN */
+/* ============================= */
+.tabla-admin{
+  width:100%;
+  border-collapse:collapse;
+  background:rgba(8,20,50,0.95);
+  border-radius:10px;
+  overflow:hidden;
+  font-size:14px;
+  min-width:750px; /* evita que se rompa en pantallas pequeñas */
+}
+
+.tabla-admin th{
+  background:linear-gradient(180deg,#133a8a,#0c255c);
+  padding:10px;
+  font-size:13px;
+  text-align:center;
+}
+
+.tabla-admin td{
+  padding:8px;
+  text-align:center;
+  border-bottom:1px solid rgba(255,255,255,0.06);
+}
+
+
+/* ============================= */
+/* INPUTS NUMERICOS */
+/* ============================= */
+.input-num{
+  width:55px;
+  padding:4px;
+  background:#0b1c3d;
+  border:1px solid rgba(255,255,255,0.15);
+  color:white;
+  border-radius:4px;
+  text-align:center;
+  font-weight:bold;
+}
+
+
+/* ============================= */
+/* EQUIPO (LOGO + NOMBRE) */
+/* ============================= */
+.equipo-admin{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  justify-content:flex-start;
+  white-space:nowrap;
+}
+
+.logo-equipo{
+  width:22px;
+  height:22px;
+  border-radius:50%;
+  border:1px solid rgba(255,255,255,0.15);
+}
+
+
+/* ============================= */
+/* BOTONES */
+/* ============================= */
+.botones{
+  margin-top:18px;
+  display:flex;
+  gap:10px;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+.btn{
+  padding:8px 14px;
+  border:none;
+  border-radius:6px;
+  cursor:pointer;
+  font-size:13px;
+  font-weight:bold;
+  transition:0.2s;
+}
+
+.btn-guardar{
+  background:#00c853;
+  color:white;
+}
+
+.btn-reset{
+  background:#d50000;
+  color:white;
+}
+
+.btn:hover{
+  transform:scale(1.05);
+  opacity:0.9;
+}
+
+
+/* ============================= */
+/* TABLET GRANDE / LAPTOP */
+/* ============================= */
+@media (max-width:1024px){
+
+  .tabla-admin{
+    font-size:13px;
+  }
+
+  .input-num{
+    width:50px;
+  }
+
+}
+
+
+/* ============================= */
+/* TABLET */
+/* ============================= */
+@media (max-width:800px){
+
+  .tabla-admin{
+    font-size:12px;
+  }
+
+  .input-num{
+    width:45px;
+    padding:3px;
+  }
+
+  .titulo-admin{
+    font-size:17px;
+  }
+
+}
+
+
+/* ============================= */
+/* TELEFONO GRANDE */
+/* ============================= */
+@media (max-width:600px){
+
+  .admin-container{
+    width:98%;
+  }
+
+  .tabla-admin{
+    font-size:11px;
+  }
+
+  .input-num{
+    width:40px;
+  }
+
+  .logo-equipo{
+    width:18px;
+    height:18px;
+  }
+
+  .botones{
+    flex-direction:column;
+    gap:8px;
+  }
+
+  .btn{
+    width:100%;
+  }
+
+}
+
+
+/* ============================= */
+/* TELEFONO PEQUEÑO */
+/* ============================= */
+@media (max-width:420px){
+
+  .tabla-admin{
+    font-size:10px;
+  }
+
+  .input-num{
+    width:36px;
+    font-size:10px;
+  }
+
+  .titulo-admin{
+    font-size:15px;
+  }
+
+}
+
+
+/* ============================= */
+/* PANTALLAS GRANDES */
+/* ============================= */
+@media (min-width:1400px){
+
+  .admin-container{
+    max-width:1200px;
+  }
+
+  .tabla-admin{
+    font-size:15px;
+  }
+
+}

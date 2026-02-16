@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modo Administrador</title>
+
+<link rel="stylesheet" href="admin.css">
+</head>
+
+<body>
+
+<div class="admin-container">
+
+  <h2>⚙️ Panel Administrador - Tabla de Posiciones</h2>
+
+  <div class="tabla-wrapper">
+    <table class="tabla-admin">
+      <thead>
+        <tr>
+          <th>Equipo</th>
+          <th>PJ</th>
+          <th>PG</th>
+          <th>PE</th>
+          <th>PP</th>
+          <th>GF</th>
+          <th>GC</th>
+          <th>Guardar</th>
+        </tr>
+      </thead>
+
+      <tbody id="admin-body"></tbody>
+    </table>
+  </div>
+
+  <br>
+
+  <button class="btn-reset" onclick="resetTabla()">
+    🔄 Reiniciar Tabla
+  </button>
+
+</div>
+
+<script src="admin.js"></script>
+
+</body>
+</html>

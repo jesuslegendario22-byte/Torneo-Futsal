@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Goleadores</title>
+  <link rel="stylesheet" href="admin-goleadores.css">
+</head>
+
+<body>
+
+  <div class="admin-container">
+
+    <h2>⚽ Panel Admin - Goleadores</h2>
+
+    <button onclick="agregarGoleador()" class="btn-add">
+      ➕ Agregar nuevo goleador
+    </button>
+
+    <br><br>
+
+    <table class="tabla-admin">
+      <thead>
+        <tr>
+          <th>Jugador</th>
+          <th>Equipo</th>
+          <th>Goles</th>
+          <th>Guardar</th>
+          <th>Eliminar</th>
+        </tr>
+      </thead>
+
+      <tbody id="admin-goleadores">
+        <!-- Aquí se agregan los goleadores dinámicamente -->
+      </tbody>
+    </table>
+
+  </div>
+
+  <!-- IMPORTANTE: el nombre del archivo en una sola línea -->
+  <script src="admin-goleadores.js"></script>
+
+</body>
+</html>
